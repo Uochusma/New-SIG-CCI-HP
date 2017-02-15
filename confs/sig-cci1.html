@@ -13,6 +13,7 @@
   <title>第1回市民共創知研究会 | 市民共創知研究会(JSAI SIG-CCI)</title>
 
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/confs/sig-cci1.css" />
   <link rel="stylesheet" href="../css/ihover.css">
@@ -22,8 +23,7 @@
   </script>
 
 </head>
-<body>
-
+<body role="document" data-spy="scroll" data-target="#photoes_menu">
   <!-- ナビバー -->
   <nav class="navbar navbar-default">
     <div class="container">
@@ -177,143 +177,222 @@
           </div>
         </div>
 
+        <div class="col-xs-12 container-fluid" id="photoes">
+          <h3>第1回研究会フォトライブラリー</h3>
 
-          <div class="col-xs-12" id="photoes">
-            <h3>第1回研究会フォトライブラリー</h3>
-            <p>画像をクリックすると拡大されます．</p>
-            <h4>集合写真</h4>
+          <div class="col-xs-8" id="photoes_article">
+            <h4 id="group_photo">集合写真</h4>
             <ul class="clearfix">
-              <li class="col-xs-12 col-md-6 thumbnail photoes">
-                <a href="#"><img src="../images/tono/All1.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/All1.jpg"  class="img-responsive" onclick="pop(this)"></a>
               </li>
-              <li class="col-xs-12 col-md-6 thumbnail photoes">
-                <a href="#"><img src="../images/tono/All2.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/All2.jpg"  class="img-responsive" onclick="pop(this)"></a>
               </li>
-              <!--li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/All3.jpg" onclick="pop(this)"></a>
-              </li-->
             </ul>
 
-            <h4>表彰式</h4>
+
+            <h4 id="field_works">地域について知る（遠野市立博物館，遠野伝承園，カッパ淵）</h4>
+            <p>
+              遠野に到着し最初に訪れたのは，遠野市立博物館でした．<br>
+              遠野文化研究センターの研究員の方のご案内のもと，遠野につたわる食（食暦）や物語（遠野物語），伝統芸能など，遠野の歴史・文化について学びました．<br>
+              <br>
+              その後，現地の語り部の方のご案内のもと，オシラサマ伝説を色濃く残す「遠野伝承園」と，カッパがいたと伝えられる「カッパ淵」を訪れました．<br>
+              <br>
+              これらの活動を通して，遠野の魅力や課題などの特徴を，俯瞰的に捉えようとしました．<br>
+            </p>
             <ul class="clearfix">
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Prize1.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day1/FieldWork3.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">遠野市立博物館</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Prize2.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day1/FieldWork2.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">遠野伝承園</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Prize3.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day1/FieldWork1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">カッパ淵</p>
               </li>
             </ul>
+
+            <h4 id="field_works_with_experts">1日目: 地域について知る（達人フィールドワーク）</h4>
+            <p>
+              次は，テーマごとに分かれた「達人フィールドワーク」を行いました．<br>
+              参加者は，自身の希望に従って「食」「陶芸」「馬」「郷土芸能」の4つのテーマに分かれ，
+              遠野でそのテーマの第一人者と呼ばれる方に，地域における活動について教えていただきました．
+            </p>
             <ul class="clearfix">
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Prize4.jpg" onclick="pop(this)"></a>
-              </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Prize5.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day1/FieldWork_eat.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">食</p>
               </li>
             </ul>
 
-            <h4>1日目: 2016/11/25(金)</h4>
+            <h4 id="homestay">1日目: 地域について知る（民泊）</h4>
+            <p>
+              1日目の夜は，一般の農家の方のお宅に宿泊する「民泊」を行いました．<br>
+              民泊を通して，地域の方の普段の暮らしぶりを知ると同時に，市民の方との親睦を深めました．
+            </p>
+
+
+            <h4 id="talk_dialogue_place">2日目: 参加者について知る（遠野ふるさと村）</h4>
+            <p>
+              2日目の会場は，遠野の昔ながらの山里を再現した「遠野ふるさと村」でした．<br>
+              数ある古民家の中でも，江戸末期に建てられた「川前別家」を会場としました．
+              馬と人間が一つ屋根の下で暮らしていた当時の住宅形式である，L字型の平面を持った「曲り家」という特徴的な家屋でした．
+            </p>
+
+
+            <h4 id="talk_dialogue">2日目: 参加者について知る（発表・対話セッション）</h4>
+            <p>
+              2日目のメインプログラムは「発表・対話セッション」でした．<br>
+              <br>
+              発表では，遠野市民・企業・NPO・大学など多様な方々から，非常にユニークな発表が，4セッションで計28件行われました．<br>
+              本セッションの特徴として，各発表の後に，通常の学会で行われる「質疑応答」ではなく，「対話」が行われたことが挙げられます．<br>
+              <br>
+              各セッションの発表が終了した後，参加者は興味・関心のある発表者の元に集まって，発表内容に対する対話を行いました．
+              対話を通じて，発表者の活動のより具体的な内容や，思想や熱意などを含めた活動の背景についてより深く知ることができました．
+              また，参加者からは，発表された技術の活用シーンに対するアイディアや，
+              発表者が持つ悩みに対する解決のためのアイディアなどが出され，共創のきっかけを得ることができました．
+            </p>
             <ul class="clearfix">
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day1/FieldWork1.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day2/Talk1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">オープニング</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day1/FieldWork2.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day2/Talk2.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">廃棄ホップ蔓で産業振興！〜遠野に和紙文化を目指して〜</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day1/FieldWork3.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day2/Discuss1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">対話セッション</p>
               </li>
-
-            </ul>
-
-            <!--div class="col-xs-12 col-md-4 thumbnail">
-              <a href="#"><img src="../images/tono/Day1/FieldWork1.jpg" onclick="pop(this)"></a>
-            </div>
-            <div class="col-xs-12 col-md-4 thumbnail">
-              <a href="#"><img src="../images/tono/Day1/FieldWork2.jpg" onclick="pop(this)"></a>
-            </div>
-            <div class="col-xs-12 col-md-4 thumbnail">
-              <a href="#"><img src="../images/tono/Day1/FieldWork3.jpg" onclick="pop(this)"></a>
-            </div>
-            <div class="clearfix"></div-->
-
-            <h4>2日目: 2016/11/26(土)</h4>
-            <ul class="clearfix list">
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Talk1.jpg" onclick="pop(this)"></a>
-              </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Talk2.jpg" onclick="pop(this)"></a>
-              </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Talk3.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day2/Discuss2.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">対話セッション</p>
               </li>
             </ul>
 
-            <ul class="clearfix list">
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Talk4.jpg" onclick="pop(this)"></a>
+
+            <h4 id="dinner_etc">2日目: 参加者について知る（飯豊神楽，子ども語り部，ディナーセッション）</h4>
+            <p>
+              昼食の時間は，遠野の郷土芸能の一つ「飯豊神楽」と，地域の小学生による「子ども語り部」を鑑賞しました．<br>
+              食事は郷土料理の「ひっつみ」を中心としたお食事をいただきました．
+              このように，地域の文化を実際の体験を通じて学ぶことも，本研究会の特徴でした．
+              <br>
+              夜はディナーセッション（交流会）が開催されました．
+              地酒を酌み交わしながら参加者同士の交流を深めると同時に，一部の発表者による技術のデモも行われました．
+            </p>
+            <ul class="clearfix">
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day2/Lunch1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">ランチセッション</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Discuss1.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day2/Narrator1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">子ども語り部</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Discuss2.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day2/Dinner1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">ディナーセッション（交流会）</p>
               </li>
             </ul>
 
-            <ul class="clearfix list">
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Discuss3.jpg" onclick="pop(this)"></a>
+
+            <h4 id="co_cre_proj">3日目: 共創プロジェクトをつくる（共創対話セッション）</h4>
+            <p>
+              3日目は「共創対話セッション」を行いました．<br>
+              参加者から「ここにいるメンバーと話したいテーマ」を挙げられ，そのテーマに興味・関心がある参加者が自由に集まって，
+              共創プロジェクトをつくる対話を行いました．<br>
+              <br>
+              計10個ほどのテーマが挙げられて対話が行われました．
+              各共創プロジェクトには，様々な所属の参加者が自然に交わり，これから自分たちが取り組みたい共創プロジェクト活動について話し合いました．
+            </p>
+            <ul class="clearfix">
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day3/Talk1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center"><a href="https://mirai-making.herokuapp.com/projects/142" target="_blank">遠野らしい学びの場を創る</a></p>
               </li>
-            </li><li class="col-xs-12 col-md-4 thumbnail photoes">
-              <a href="#"><img src="../images/tono/Day2/Lunch1.jpg" onclick="pop(this)"></a>
-            </li>
-            <!--li class="col-xs-12 col-md-4 thumbnail photoes">
-              <a href="#"><img src="../images/tono/Day2/Lunch2.jpg" onclick="pop(this)"></a>
-            </li-->
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Narrator1.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day3/Talk2.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center"><a href="https://mirai-making.herokuapp.com/projects/132" target="_blank">共創のための舞台をつくる　〜次回研究会に向けて〜</a></p>
               </li>
-              <!--li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Narrator2.jpg" onclick="pop(this)"></a>
-              </li-->
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Dinner1.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day3/Talk3.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center"><a href="https://mirai-making.herokuapp.com/projects/102" target="_blank">スーパーアグリ構想</a></p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Dinner2.jpg" onclick="pop(this)"></a>
-              </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day2/Dinner3.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Day3/Talk4.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">郷土食理解の為の地図システムの試作と提案</p>
               </li>
             </ul>
 
-            <h4>1日目: 2016/11/27(日)</h4>
-            <ul class="clearfix list">
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day3/Discuss1.jpg" onclick="pop(this)"></a>
+
+            <h4 id="prizes">3日目: 表彰式</h4>
+            <p>
+              最後に表彰式が行われました．
+              地域4件，大学2件，企業2件（共同受賞含む）の受賞がありました．<br>
+
+              最後に，研究会後にも共創プロジェクト活動を進められるよう，共創支援システム「みらいらぼ」に共創プロジェクトが登録されました．
+              計6つの共創プロジェクトが登録され，研究会で生まれた共創プロジェクトが現在進行形で進められています．<br>
+
+              また，共創プロジェクトを進めるためのイベント「Baby Step Fes(BSF)」が月に一回開催され，活動進行の一助になっています．<br>
+
+              3月には「市民共創知コンペティション」が開催されることも決まっており，共創プロジェクトの活動の成果を，コンペティションで発表することもできます．<br>
+
+              このように，本研究会は，通常の研究会のように，自らの研究を発表するだけでなく，参加者同士で共創プロジェクトをつくり，
+              実際に活動を進め，成果を出すことまでを視野に含む研究会です．
+              このような取り組みを通じて，今後も社会課題解決に向けた活動やその成果を生み出す活動を促進することを目指します．
+            </p>
+            <ul class="clearfix">
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Prize1.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">ベストイシュー賞：大森友子・一ノ瀬修吾（地域・大学）</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day3/Discuss2.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Prize2.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">市民共創知奨励賞: 田中克明（大学）</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day3/Talk1.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Prize3.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">ベストプレゼンテーション賞：藤原愛衣（地域，高校生）</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day3/Talk2.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Prize4.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">最優秀市民共創知賞：太田由紀子（地域）</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day3/Talk3.jpg" onclick="pop(this)"></a>
+              <li class="col-xs-12 thumbnail">
+                <a href="#"><img src="../images/tono/Prize5.jpg"  class="img-responsive" onclick="pop(this)"></a>
+                <p class="text-center">市民共創知奨励賞: 水谷美由起（企業）</p>
               </li>
-              <li class="col-xs-12 col-md-4 thumbnail photoes">
-                <a href="#"><img src="../images/tono/Day3/Talk4.jpg" onclick="pop(this)"></a>
-              </li>
+            </ul>
+
+
           </div>
 
+          <div  data-spy="scroll" id="photoes_menu" class="col-xs-4 scr">
+            <h3>フォトライブラリ目次</h3>
+            <ul class="nav nav-pills nav-stacked">
+              <h4>研究会全体</h4>
+              <li><a class="linkInThePage" href="#group_photo">集合写真</a></li>
+              <h4>11/25(金) - 地域について知る</h4>
+              <li><a class="linkInThePage" href="#field_works">遠野市立博物館，遠野伝承園，カッパ淵</a></li>
+              <li><a class="linkInThePage" href="#field_works_with_experts">達人フィールドワーク</a></li>
+              <li><a class="linkInThePage" href="#homestay">民泊</a></li>
+              <h4>11/26(土) - 参加者について知る</h4>
+              <li><a class="linkInThePage" href="#talk_dialogue_place">遠野ふるさと村</a></li>
+              <li><a class="linkInThePage" href="#talk_dialogue">発表・対話セッション</a></li>
+              <li><a class="linkInThePage" href="#dinner_etc">飯豊神楽，子ども語り部，ディナーセッション</a></li>
+              <h4>11/27(日) - 共創プロジェクトをつくる</h4>
+              <li><a class="linkInThePage" href="#co_cre_proj">共創対話セッション</a></li>
+              <li><a class="linkInThePage" href="#prizes">表彰式</a></li>
+            </ul>
+
+          </div>
+
+        </div>
 
 
           <div class="col-xs-12" id="timetable">
@@ -643,9 +722,19 @@
 
   <!-- JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!--script src="../js/bootstrap.min.js"></script-->
   <script src="../js/jquery.wookmark.min.js"></script>
   <script src="../js/lightbox.js"></script>
   <script src="../js/mymove.js"></script>
+  <script src="http://bootstrap3.cyberLab.info/jquery/animatescroll.js-master/animatescroll.noeasing.js"></script>
+		<script>
+			$( function() {
+				$('.linkInThePage').click( function () {
+					var hrefValue = $(this).attr( 'href' );
+					$(hrefValue).animatescroll();
+				} );
+			} );
+		</script>
 
 </body>

@@ -34,6 +34,28 @@ h4 {
   font-size:0.95em;
 }
 
+/***** フォトライブラリー *****/
+#photoes{
+  //background:#afa;
+  position: relative;
+}
+  #photoes_menu{
+    background: none repeat scroll 0 0 #f0f8ff;
+    position: absolute;
+    max-height: 100vh;
+    right: 10px;
+    top: 10px;
+  }
+  .scr {
+  overflow: scroll;   /* スクロール表示 */
+}
+  #photoes_menu.fixed{
+    background: none repeat scroll 0 0 red;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+  }
+
 
 /***** cardについて *****/
 .card {
