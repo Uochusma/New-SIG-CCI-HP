@@ -71,19 +71,6 @@ jQuery(document).ready(function($){
 		var wst = $window.scrollTop();
 		//if the window scroll is within the min and max (the container will be "sticky";
 
-    if (0){
-      if( wst >= $menu.attr("data-min") && wst <= $menu.attr("data-max") ){
-        $menu.addClass('fixed');
-      } else if( wst <= $menu.attr("data-min") ){
-        $menu.removeClass('fixed');
-
-      } else if( wst > $menu.attr("data-max") ){
-        $menu.removeClass('fixed');
-        $menu.css("margin-top", $menu.attr("data-max")-$menu.attr("data-min")+"px" );
-      }
-    }
-
-    if (1){
   		if( wst >= $menu.attr("data-min") && wst <= $menu.attr("data-max") ){
   			//work out the margin offset
   			var margin_top = $window.scrollTop() - $menu.attr("data-min");
@@ -100,7 +87,6 @@ jQuery(document).ready(function($){
   			//fix the container to the top
   			$menu.css("margin-top", $menu.attr("data-max")-$menu.attr("data-min")+"px" );
   		}
-    }
 	}
 	//do one container move on load
 	container_move();

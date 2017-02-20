@@ -48,13 +48,6 @@ h4 {
   }
   .scr {
   overflow: scroll;   /* スクロール表示 */
-}
-  #photoes_menu.fixed{
-    background: none repeat scroll 0 0 red;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-  }
 
 
 /***** cardについて *****/
