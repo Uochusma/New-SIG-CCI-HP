@@ -7,30 +7,38 @@
 
 </head>
 <body>
+  <!-- ロード画面開始 -->
   <div id="loader-bg">
     <div id="loader">
       <img src="img-loading.gif" width="80" height="80" alt="Now Loading..." />
       <p>Now Loading...</p>
     </div>
   </div>
+  <!-- ロード画面終了 -->
 
+  <!-- 通常画面開始 -->
   <div id="wrap">
+    <!-- ヘッダー開始 -->
     <div id = "headerArea" class="col-sm-12">
       <ul>
-        <li class = "headMenu col-sm-2">Profile</li>
-        <li class = "headMenu col-sm-2">Product</li>
+        <li class = "headMenu col-sm-2">研究会について</li>
+        <li class = "headMenu col-sm-2">対馬についての予習</li>
+        <li class = "headMenu col-sm-2">交通案内</li>
+        <li class = "headMenu col-sm-2">エントリーフォーム</li>
+        <li class = "headMenu col-sm-2">直前告知内容</li>
       </ul>
     </div>
+    <!-- ヘッダー終了 -->
 
-    <p class="pankuzu">
-      <a>マイホームページ</a>
-      &nbsp;&nbsp;&gt;&nbsp;&nbsp;
-      <a>index</a>
-    </p>
-
+    <!-- パンくずリスト開始 -->
     <div id="wrapper">
-      <p class="txt">こちらは<a href="">テキストリンク</a>です。</p>
+      <p class="pankuzu">
+        <a>マイホームページ</a>
+        &nbsp;&nbsp;&gt;&nbsp;&nbsp;
+        <a>index</a>
+      </p>
     </div>
+    <!-- パンくずリスト終了 -->
 
     <div id="wrapper">
       <input type="radio" name="slideshow" id="switch1" checked>
@@ -41,69 +49,82 @@
       <div id="slideshow">
         <div class="slideContents">
           <section id="slide1">
-            <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_1">
+            <div class="contents">
+              <h1>第2回市民共創知研究会</h1>
+              <p>2017/3 @長崎県 対馬</p>
+              <p>和多都美神社</p>
+            </div>
+            <img src="Pictures/Slide1.png">
           </section>
           <section id="slide2">
-            <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_2">
+            <div class="contents">
+              <h1>第2回市民共創知研究会</h1>
+              <p>2017/3 @長崎県 対馬</p>
+              <p>白嶽</p>
+            </div>
+            <img src="Pictures/Slide2.png">
           </section>
           <section id="slide3">
-            <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_3">
+            <img src="Pictures/Slide3.png">
           </section>
           <section id="slide4">
             <img src="Pictures/Thai1.jpeg">
           </section>
           <section id="slide5">
-            <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_5">
+              <img src="Pictures/3.jpg">
           </section>
         </div>
-
-        <p class="arrow prev">
-          <i class="ico"></i>
-          <label for="switch1"></label> <!-- switch1 id に関連付け -->
-          <label for="switch2"></label>
-          <label for="switch3"></label>
-          <label for="switch4"></label>
-          <label for="switch5"></label>
-        </p>
-        <p class="arrow next">
-          <i class="ico"></i>
-          <label for="switch1"></label>
-          <label for="switch2"></label>
-          <label for="switch3"></label>
-          <label for="switch4"></label>
-          <label for="switch5"></label>
-        </p>
       </div>
     </div>
 
-  <header style="background-color:gray">Header</header>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-2" style="background-color:red;">Red</div>
-        <div class="col-sm-8 hidden-sm" style="background-color:blue;">Blue</div>
-        <div class="col-sm-2" style="background-color:yellow;">Yellow</div>
-      </div>
-    </div>
-  <footer style="background-color:gray">Footer</footer>
 
-    <div class="flex-container-1">
-      <section id="slide10">
-        <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_1">
-      </section>
-      <section id="slide11">
-        <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_2">
-      </section>
-    </div>
+        <!-- 目次 -->
+        <div class="col-xs-12 col-md-4 col-md-push-8">
+          <h3>目次</h3>
+          <ul>
+            <li><a href="#news">第1回研究会について</a></li>
+            <li><a href="#photoes">第1回研究会フォトライブラリー</a></li>
+            <li><a href="#timetable">タイムテーブル</a></li>
+            <li><a href="#sessions">セッション分け</a></li>
+          </ul>
+          <!--h3>過去の研究会</h3-->
+          <h3>外部リンク</h3>
+          <ul>
+            <li><a href="https://mirai-making.herokuapp.com" target="_blank">みらいらぼ</a></li>
+          </ul>
 
-      <div id="contentsArea">
-        Start<br />
-        Contents<br />Contents<br />Contents<br />Contents<br />Contents<br />Contents<br />Contents<br />
-        Contents<br />Contents<br />Contents<br />Contents<br />Contents<br />Contents<br />Contents<br />
-        End
-      </div>
+          <h3>新着情報</h3>
+          <table class="table table-condensed">
+            <tr><th>Date</th><th>Contents</th></tr>
+            <tr>
+              <td>2017/02/20</td>
+              <td>フォトライブラリー更新</td>
+            </tr>
+          </table>
+        </div>
+        <!-- 目次終わり -->
+
+
+        <div class="col-xs-12 col-md-8 col-md-pull-4">
+          <div class="row">
+            <div class="col-xs-12" id="articletop">
+              <h3>第一回研究会まとめ</h3>
+              <p>第1回研究会お疲れ様でした．</p>
+              <p>研究会での経験を市民共創プロジェクトや第2回研究会に是非とも生かしていきましょう．</p>
+              <ul>
+                <li>第1回研究会報告書: <a href="../files/conclusion/第一回研究会報告資料.pdf">第１回共創知研究会報告資料</a></li>
+                <li>市民共創プロジェクト: <a href="https://mirai-making.herokuapp.com" target="_blank">みらいらぼ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
       <div id = "footerArea"></div>
   </div>
+  <!-- 通常画面終了 -->
+
   <!-- BootstrapのCSS読み込み -->
    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
    <!-- jQuery読み込み -->
@@ -111,9 +132,14 @@
    <!-- BootstrapのJS読み込み -->
    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
    <script src="Loading.js"></script>
-   <link rel="stylesheet" href="slideshow.css">
+   <link rel="stylesheet" href="slideshowAuto.css">
    <link rel="stylesheet" href="FlexBoxStyle.css">
    <link rel="stylesheet" href="base1.css">
+   <link rel="stylesheet" href="Common.css">
    <link rel="stylesheet" href="Loading.css">
+   <link rel="stylesheet" href="../css/style.css" />
+   <link rel="stylesheet" href="../css/confs/sig-cci1.css" />
+   <link rel="stylesheet" href="../css/ihover.css">
+   <link rel="stylesheet" href="../css/lightbox.css">
 </body>
 </html>

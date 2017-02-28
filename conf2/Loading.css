@@ -1,4 +1,4 @@
-#loader-bg {
+#loader-bg {/*ロード画面の背景*/
   display: none;
   position: fixed;
   width: 100%;
@@ -8,7 +8,7 @@
   background: #000;
   z-index: 4;
 }
-#loader {
+#loader {/*ロード中に最前面に出る内容*/
   display: none;
   position: fixed;
   top: 50%;

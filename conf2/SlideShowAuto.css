@@ -1,8 +1,9 @@
+/*アニメーションによるスライドショーを行う。アニメーションは周りと独立しているのでスライドショーが大きくなりすぎることはないが、クリックなどが出来ない。*/
 /* :::::: slideshow :::::: */
 
 #wrapper {
   overflow: hidden;
-  width: 100%;/*親ボックスに対する パーセント*/
+  width: 100%;
   padding: 0;
 }
 
@@ -26,7 +27,7 @@ input[type="radio"] {
 .slideContents,
 .slideContents section {
   width: 100%;
-  height: auto;
+  height: auto;/*ここでスライドショーのサイズを調整する*/
 }
 
 .slideContents section {
@@ -51,7 +52,7 @@ input[type="radio"] {
 /* :::::: contents :::::: */
 
 .slideContents section {
-  opacity: 0;/*透明度 0(透明)~1.0(不透明)*/
+  opacity: 1.0;/*透明度 0(透明)~1.0(不透明)*/
 }
 
 .slideContents section .contents {
@@ -81,7 +82,7 @@ input[type="radio"] {
   font-size: 21px;
 }
 
-/* :::::: slideshow mechanism :::::: */
+/* :::::: slideshow mechanism :::::: * chekced が付いたところの画像が配置され、画像のサイズにスライドショーのサイズが合わされる
 
 #switch1:checked ~ #slideshow .slideContents #slide1,
 #switch2:checked ~ #slideshow .slideContents #slide2,
@@ -128,86 +129,59 @@ input[type="radio"] {
 #switch5:checked ~ #slideshow .slideContents #slide3 {
   transition-duration: 0s;
 }
-
-/* :::::: arrows ::::::*/
-
-.arrow,
-.arrow label,
-.arrow .ico {
-  position: absolute;
+*/
+/* :::::: timer mechanism ::::::*/
+/*アニメーションによって描画する　アニメーションなので独立して使えるが、選択ができない*/
+.slideContents section {
+  -webkit-animation: autoplay 30s infinite;
+  animation: autoplay 30s infinite;
 }
 
-.arrow {
-  top: 0;
-  margin: 0;
-  transition: background .3s;
-}
-.prev { left: 0; }
-.next { right: 0; }
-
-.arrow:hover {
-  background: rgba(255,255,255,.2);
+.slideContents section {
+  -webkit-transform: none;
+  transform: none;
+  transition: none;
 }
 
-.arrow,
-.arrow label {
-  cursor: pointer;
-  width: 50px;
-  height: 100%;
+.slideContents #slide1 {
+  position: relative;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
 
-.arrow label {
-  top: 0;
-  left: 0;
-  z-index: 1;
+.slideContents #slide2 {
+  -webkit-animation-delay: -24s;
+  animation-delay: -24s;
 }
 
-.arrow .ico {
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  margin-top: -6px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
-  opacity: 0;
-  transition: right .6s, left .6s, opacity .6s;
+.slideContents #slide3 {
+  -webkit-animation-delay: -18s;
+  animation-delay: -18s;
 }
 
-.arrow:hover .ico {
-  opacity: .6;
-  transition-duration: .3s;
+.slideContents #slide4 {
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
 }
 
-.prev .ico {
-  left: 60%;
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+.slideContents #slide5 {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
 }
 
-.next .ico {
-  right: 60%;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+@-webkit-keyframes autoplay {
+  0% { -webkit-transform: translateX(0); }
+  16% { -webkit-transform: translateX(0); }
+  20% { -webkit-transform: translateX(-100%); }
+  20.001% { -webkit-transform: translateX(100%); }
+  96% { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(0); }
 }
-.prev:hover .ico { left: 30%; }
-.next:hover .ico { right: 30%; }
-
-/* :::::: arrows mechanism ::::::*/
-
-.arrow label {
-  pointer-events: none;
-}
-
-#switch1:checked ~ #slideshow .prev label[for="switch5"],/* switch1 id が　チェックされている時*/
-#switch2:checked ~ #slideshow .prev label[for="switch1"],
-#switch3:checked ~ #slideshow .prev label[for="switch2"],
-#switch4:checked ~ #slideshow .prev label[for="switch3"],
-#switch5:checked ~ #slideshow .prev label[for="switch4"],
-
-#switch1:checked ~ #slideshow .next label[for="switch2"],
-#switch2:checked ~ #slideshow .next label[for="switch3"],
-#switch3:checked ~ #slideshow .next label[for="switch4"],
-#switch4:checked ~ #slideshow .next label[for="switch5"],
-#switch5:checked ~ #slideshow .next label[for="switch1"] {
-  pointer-events: auto;
+@keyframes autoplay {
+  0% { transform: translateX(0); }
+  16% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  20.001% { transform: translateX(100%); }
+  96% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
 }

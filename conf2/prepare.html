@@ -6,6 +6,91 @@
 <meta name="viewport" content="width=device-width", initial-scale=1">
 </head>
   <body>
+    <div id ="wrapper">
+        <!-- ヘッダー開始 -->
+        <div id = "headerArea" class="col-sm-12">
+          <ul>
+            <li class = "headMenu col-sm-2">研究会について</li>
+            <li class = "headMenu col-sm-2">対馬についての予習</li>
+            <li class = "headMenu col-sm-2">交通案内</li>
+            <li class = "headMenu col-sm-2">エントリーフォーム</li>
+            <li class = "headMenu col-sm-2">直前告知内容</li>
+          </ul>
+          <!-- サイドメニュー開始 -->
+            <input type="checkbox" id="navTgl">
+
+            <label for="navTgl" class="open">≡</label>
+            <label for="navTgl" class="close"></label>
+            <nav class="menu">
+              <h2>menu</h2>
+              <ul>
+                <li><a href="#article1">対馬の概要</a></li>
+                <li><a href="#article2">対馬観察日記</a></li>
+                <li><a href="#article3">フィールドワーク紹介</a></li>
+                <li><a href="#article4">佐藤さんメッセージ</a></li>
+                <li><a href="#article5">主要参加者紹介</a></li>
+              </ul>
+            </nav>
+            <!-- サイドメニュー終了 -->
+        </div>
+        <!-- ヘッダー終了 -->
+
+        <!-- パンくずリスト開始 -->
+        <div>
+          <p class="pankuzu">
+            <a>第２回</a>
+            &nbsp;&nbsp;&gt;&nbsp;&nbsp;
+            <a>対馬についての予習</a>
+          </p>
+        </div>
+        <!-- パンくずリスト終了 -->
+
+      <div class="contents">
+        <article>
+          <h1>対馬についての予習</h1>
+          <section id="article1">
+            <h3>対馬の概要</h3>
+            <figure>
+              <img src="Pictures/Slide1.png">
+              <p></p>
+            </figure>
+          </section>
+
+          <section id="article2">
+            <h3>対馬観察日記</h3>
+            <figure>
+              <img src="Pictures/Slide2.png">
+              <p></p>
+            </figure>
+          </section>
+
+          <section id="article3">
+            <h3>フィールドワーク紹介</h3>
+            <figure>
+              <img src="Pictures/Slide3.png">
+              <p></p>
+            </figure>
+          </section>
+
+          <section id="article4">
+            <h3>佐藤さんメッセージ</h3>
+            <figure>
+              <img src="Pictures/Slide4.png">
+              <p></p>
+            </figure>
+          </section>
+
+          <section id="article5">
+            <h3>主要参加者紹介</h3>
+            <figure>
+              <img src="Pictures/Slide5.png">
+              <p></p>
+            </figure>
+          </section>
+        </article>
+  </div>
+</div>
+
 
     <!-- BootstrapのCSS読み込み -->
      <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +98,11 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <!-- BootstrapのJS読み込み -->
      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-  <link rel="stylesheet" href="base1.css">
+     <link rel="stylesheet" href="Common.css">
+     <link rel="stylesheet" href="SideMenu.css">
+     <link rel="stylesheet" href="../css/style.css" />
+     <link rel="stylesheet" href="../css/confs/sig-cci1.css" />
+     <link rel="stylesheet" href="../css/ihover.css">
+     <link rel="stylesheet" href="../css/lightbox.css">
   </body>
 </html>
