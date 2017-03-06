@@ -1,3 +1,4 @@
+/*すべてのページに共通する内容(ヘッダー、パンくずリスト)を記述*/
 .pankuzu {/*pankuzuクラス*/
   margin: 50px 0 0;
   text-align: left;;

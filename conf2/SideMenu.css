@@ -1,3 +1,4 @@
+/*ドロワーボタンに関する内容を記述*/
 @font-face {
   font-family: "Ubuntu Condensed";
   font-style: normal;
@@ -8,14 +9,6 @@
 }
 
 /* :::::: contents :::::: */
-
-#wrapper {
-  overflow: hidden;
-  min-width: 320px;
-  height: auto;
-  padding: 0;
-}
-
 .contents {
   -webkit-transition: -webkit-transform .6s;
   transition: transform .6s;
