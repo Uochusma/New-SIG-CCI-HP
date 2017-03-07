@@ -17,16 +17,19 @@
   <!-- ロード画面終了 -->
 
   <!-- 通常画面開始 -->
-  <div id="wrap">
-    <!-- ヘッダー開始 -->
-    <div id = "headerArea" class="col-sm-12">
-      <ul>
-        <li class = "headMenu col-sm-2"><a href = "about.html">研究会について</a></li>
-        <li class = "headMenu col-sm-2"><a href = "prepare.html">対馬についての予習</a></li>
-        <li class = "headMenu col-sm-2"><a href = "traffic.html">交通案内</a></li>
-        <li class = "headMenu col-sm-2">エントリーフォーム</li>
-        <li class = "headMenu col-sm-2">直前告知内容</li>
-      </ul>
+  <!-- ヘッダー開始 -->
+  <div id="wrap" class="container-fluid">
+      <div class="row">
+        <div id = "headerArea" class="col-sm-2 col-xs-12">
+          <ul>
+            <li class = "headMenu"><a href = "main.html">ホーム</a></li>
+            <li class = "headMenu"><a href = "about.html">研究会について</a></li>
+            <li class = "headMenu"><a href = "prepare.html">対馬についての予習</a></li>
+            <li class = "headMenu"><a href = "traffic.html">交通案内</a></li>
+            <li class = "headMenu">エントリーフォーム</li>
+            <li class = "headMenu">直前告知内容</li>
+          </ul>
+        </div>
     </div>
     <!-- ヘッダー終了 -->
 
@@ -39,41 +42,41 @@
     <!-- パンくずリスト終了 -->
 
     <div id="wrapper">
-      <input type="radio" name="slideshow" id="switch1" checked>
-      <input type="radio" name="slideshow" id="switch2">
-      <input type="radio" name="slideshow" id="switch3">
-      <input type="radio" name="slideshow" id="switch4">
-      <input type="radio" name="slideshow" id="switch5">
+      <input type="radio" name="slideshowButton" id="switch1" checked="true">
+      <input type="radio" name="slideshowButton" id="switch2">
+      <input type="radio" name="slideshowButton" id="switch3">
+      <input type="radio" name="slideshowButton" id="switch4">
+      <input type="radio" name="slideshowButton" id="switch5">
       <div id="slideshow">
         <div class="slideContents">
           <section id="slide1">
-            <div class="contents">
-              <h1>第2回市民共創知研究会</h1>
-              <p>2017/3 @長崎県 対馬</p>
-              <p>和多都美神社</p>
-            </div>
-            <img src="Pictures/Slide1.png">
+            <img src="Pictures/3.jpg">
           </section>
           <section id="slide2">
-            <div class="contents">
-              <h1>第2回市民共創知研究会</h1>
-              <p>2017/3 @長崎県 対馬</p>
-              <p>白嶽</p>
-            </div>
-            <img src="Pictures/Slide2.png">
+            <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_2">
           </section>
           <section id="slide3">
-            <img src="Pictures/Slide3.png">
+            <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_3">
           </section>
           <section id="slide4">
             <img src="Pictures/Thai1.jpeg">
           </section>
           <section id="slide5">
-              <img src="Pictures/3.jpg">
+            <img src="http://placehold.it/600x200/fafafa/20b2aa/&text=slide_5">
           </section>
         </div>
+
+        <p class="arrow prev" id="arrow prev">
+          <i class="ico"></i>
+          <label></label>
+        </p>
+        <p class="arrow next" id="arrow next">
+          <i class="ico"></i>
+          <label></label>
+        </p>
       </div>
     </div>
+
 
     <div class="container">
       <div class="row">
@@ -130,7 +133,8 @@
    <!-- BootstrapのJS読み込み -->
    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
    <script src="Loading.js"></script>
-   <link rel="stylesheet" href="slideshowAuto.css">
+   <link rel="stylesheet" href="slideshow.css">
+   <script src="SlideShow.js"></script>
    <link rel="stylesheet" href="FlexBoxStyle.css">
    <link rel="stylesheet" href="base1.css">
    <link rel="stylesheet" href="Common.css">

@@ -2,7 +2,7 @@
 
 #wrapper {
   overflow: hidden;
-  width: 100%;/*親ボックスに対する パーセント*/
+  width: 100%;
   padding: 0;
 }
 
@@ -26,7 +26,8 @@ input[type="radio"] {
 .slideContents,
 .slideContents section {
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 200px;/*高さを制限*/
 }
 
 .slideContents section {
@@ -48,88 +49,55 @@ input[type="radio"] {
   vertical-align: middle;
 }
 
-/* :::::: contents :::::: */
-
-.slideContents section {
-  opacity: 0;/*透明度 0(透明)~1.0(不透明)*/
-}
-
-.slideContents section .contents {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  position: absolute;/*位置指定を有効に*/
-  top: 0;
-  left: 50%;
-  width: 600px;
-  height: 200px;
-  margin-left: -300px;
-  padding: 20px;
-}
-
-.slideContents section h1,
-.slideContents section p {
-  color: lightseagreen;
-  opacity: 1.0;
-}
-
-.slideContents section h1 {
-  margin: 0px 0px 20px 0px;/*上、右、左、下　のマージン*/
-  font-size: 40px;
-}
-
-.slideContents section p {
-  font-size: 21px;
-}
-
 /* :::::: slideshow mechanism :::::: */
 
-#switch1:checked ~ #slideshow .slideContents #slide1,
-#switch2:checked ~ #slideshow .slideContents #slide2,
-#switch3:checked ~ #slideshow .slideContents #slide3,
-#switch4:checked ~ #slideshow .slideContents #slide4,
-#switch5:checked ~ #slideshow .slideContents #slide5 {
+#switch1[checked=true] ~ #slideshow .slideContents #slide1,
+#switch2[checked=true] ~ #slideshow .slideContents #slide2,
+#switch3[checked=true] ~ #slideshow .slideContents #slide3,
+#switch4[checked=true] ~ #slideshow .slideContents #slide4,
+#switch5[checked=true] ~ #slideshow .slideContents #slide5 {
   z-index: 1;
   position: relative;
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
-#switch1:checked ~ #slideshow .slideContents #slide1,
-#switch2:checked ~ #slideshow .slideContents #slide2,
-#switch3:checked ~ #slideshow .slideContents #slide3,
-#switch4:checked ~ #slideshow .slideContents #slide4,
-#switch5:checked ~ #slideshow .slideContents #slide5 {
+#switch1[checked=true] ~ #slideshow .slideContents #slide1,
+#switch2[checked=true] ~ #slideshow .slideContents #slide2,
+#switch3[checked=true] ~ #slideshow .slideContents #slide3,
+#switch4[checked=true] ~ #slideshow .slideContents #slide4,
+#switch5[checked=true] ~ #slideshow .slideContents #slide5 {
   opacity: 1;
 }
 
-#switch1:checked ~ #slideshow .slideContents #slide5,
-#switch1:checked ~ #slideshow .slideContents #slide4,
-#switch2:checked ~ #slideshow .slideContents #slide1,
-#switch2:checked ~ #slideshow .slideContents #slide5,
-#switch3:checked ~ #slideshow .slideContents #slide2,
-#switch3:checked ~ #slideshow .slideContents #slide1,
-#switch4:checked ~ #slideshow .slideContents #slide3,
-#switch4:checked ~ #slideshow .slideContents #slide2,
-#switch5:checked ~ #slideshow .slideContents #slide4,
-#switch5:checked ~ #slideshow .slideContents #slide3 {
+#switch1[checked=true] ~ #slideshow .slideContents #slide5,
+#switch1[checked=true] ~ #slideshow .slideContents #slide4,
+#switch2[checked=true] ~ #slideshow .slideContents #slide1,
+#switch2[checked=true] ~ #slideshow .slideContents #slide5,
+#switch3[checked=true] ~ #slideshow .slideContents #slide2,
+#switch3[checked=true] ~ #slideshow .slideContents #slide1,
+#switch4[checked=true] ~ #slideshow .slideContents #slide3,
+#switch4[checked=true] ~ #slideshow .slideContents #slide2,
+#switch5[checked=true] ~ #slideshow .slideContents #slide4,
+#switch5[checked=true] ~ #slideshow .slideContents #slide3 {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
-#switch1:checked ~ #slideshow .slideContents #slide3,
-#switch2:checked ~ #slideshow .slideContents #slide4,
-#switch3:checked ~ #slideshow .slideContents #slide5,
-#switch4:checked ~ #slideshow .slideContents #slide1,
-#switch5:checked ~ #slideshow .slideContents #slide2,
-#switch1:checked ~ #slideshow .slideContents #slide4,
-#switch2:checked ~ #slideshow .slideContents #slide5,
-#switch3:checked ~ #slideshow .slideContents #slide1,
-#switch4:checked ~ #slideshow .slideContents #slide2,
-#switch5:checked ~ #slideshow .slideContents #slide3 {
+#switch1[checked=true] ~ #slideshow .slideContents #slide3,
+#switch2[checked=true] ~ #slideshow .slideContents #slide4,
+#switch3[checked=true] ~ #slideshow .slideContents #slide5,
+#switch4[checked=true] ~ #slideshow .slideContents #slide1,
+#switch5[checked=true] ~ #slideshow .slideContents #slide2,
+#switch1[checked=true] ~ #slideshow .slideContents #slide4,
+#switch2[checked=true] ~ #slideshow .slideContents #slide5,
+#switch3[checked=true] ~ #slideshow .slideContents #slide1,
+#switch4[checked=true] ~ #slideshow .slideContents #slide2,
+#switch5[checked=true] ~ #slideshow .slideContents #slide3 {
   transition-duration: 0s;
 }
 
-/* :::::: arrows ::::::*/
+/* :::::: arrows :::::: */
 
 .arrow,
 .arrow label,
@@ -192,22 +160,11 @@ input[type="radio"] {
 .prev:hover .ico { left: 30%; }
 .next:hover .ico { right: 30%; }
 
-/* :::::: arrows mechanism ::::::*/
 
-.arrow label {
-  pointer-events: none;
-}
-
-#switch1:checked ~ #slideshow .prev label[for="switch5"],/* switch1 id が　チェックされている時*/
-#switch2:checked ~ #slideshow .prev label[for="switch1"],
-#switch3:checked ~ #slideshow .prev label[for="switch2"],
-#switch4:checked ~ #slideshow .prev label[for="switch3"],
-#switch5:checked ~ #slideshow .prev label[for="switch4"],
-
-#switch1:checked ~ #slideshow .next label[for="switch2"],
-#switch2:checked ~ #slideshow .next label[for="switch3"],
-#switch3:checked ~ #slideshow .next label[for="switch4"],
-#switch4:checked ~ #slideshow .next label[for="switch5"],
-#switch5:checked ~ #slideshow .next label[for="switch1"] {
-  pointer-events: auto;
+section[id="slide1"]::after{/*スライド１に重ねて表示する文章*/
+  content: "市民共創知研究会 \A 和多都美神社";
+  white-space: pre;/* \A 改行を有効にする */
+  position: relative;;
+  top: -600px;
+  left: 0;
 }
