@@ -1,0 +1,20 @@
+/*BootStrap に関連するの上書きを行う*/
+/*スライド関連要素の上書き*/
+div[class="carousel-inner"] img{/* class="carousel-inner" を持つ div の中の img 要素*/
+  margin: auto;
+}
+
+div[class="carousel-inner"] img{
+    width: auto;
+    height: auto;
+    min-width: 80%;
+    max-height: 100%;
+}
+
+@media screen and (min-width : 768px){
+    div[class="carousel-inner"] img{ max-height:250px;}
+}
+
+@media screen and (min-width : 1024px) {
+    div[class="carousel-inner"] img{ max-height:500px};
+}
